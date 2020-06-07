@@ -1,0 +1,142 @@
+﻿<html>
+<head>
+    <style>
+
+        ul {
+            list-style-type: none;
+            box-shadow: 10px 10px 50px black;
+            padding: 20px;
+            overflow: hidden;
+            background-color: white;
+            position: fixed;
+            width: 95.3%;
+            top: 0;
+        }
+
+        li {
+            float: right;
+        }
+
+        .sin-li {
+            float: left;
+            padding-left: 30px;
+        }
+
+        li a, .dropbtn {
+            display: inline-block;
+            color: #6e6e6e;
+            text-align: center;
+            padding: 14px 30px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+            li a:hover, .dropdown:hover .dropbtn {
+                background-color: #ff6110;
+                color: white;
+            }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            position: fixed;
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+        .logo {
+            height: 70px;
+            width: 120px;
+        }
+
+
+        .dropdown:hover .dropdown-content {
+            position: fixed;
+            display: block;
+        }
+
+        #banner {
+            padding-top: 10%;
+            width: 100%;
+            height: 500px;
+        }
+
+        #video {
+            padding-top: 100px;
+        }
+
+
+        #secund {
+            background-color: #ff6110;
+            color: white;
+            margin-top: 60px;
+            border-top-style: groove;
+            border-bottom-style: groove;
+    	    box-shadow: 2px 2px 50px black;
+        }
+    </style>
+
+    <script>
+        alert('Hello to programming languages website');
+    </script>
+
+</head>
+<body>
+    <ul>
+        <li class="sin-li">
+            <div><img class="logo" src="images\logo.png" alt="logo"></div>
+        </li>
+        <li><a href="contactUs.html" target="_blank"><b>Contact us</b></a></li>
+
+        <li><a href="programmingLanguage.html" target="_blank"><b>related sites</b></a></li>
+
+        <li class="dropdown">
+            <a href="" class="dropbtn"><b>Languages</b></a>
+            <div class="dropdown-content">
+                <a href="HTML.html" target="_blank">HTML</a>
+                <a href="CSS.html" target="_blank">CSS</a>
+                <a href="JS.html" target="_blank">Javascript</a>
+            </div>
+        </li>
+
+
+    </ul>
+
+    <section>
+        <center><img id="banner" src="images\banner.jpeg" /></center>
+    </section>
+
+    <center id="video">
+        <h2>HTML, CSS, JavaScript Explained [in 4 minutes for beginners]</h2>
+        <video width="600" controls="">
+            <source src="HTML, CSS, JavaScript Explained [in 4 minutes for beginners].mp4" type="video/mp4">
+        </video>
+    </center>
+    <p>
+        
+    </p>
+    <footer id="secund">
+        <p style="font-family: monospace;"><marquee style="font-size: 14pt; "> <?php
+        echo  date("Y-m-d") ;
+        echo " , ".date("l"); ?> <strong> Welcome to the programming languages website  </strong> </marquee></p>
+
+    </footer>
+
+    <script>
+    </script>
+</body>
+</html>
